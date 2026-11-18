@@ -52,9 +52,7 @@ function SpotlightCard({
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setCoords((prev) => ({ ...prev, active: false }))}
-      className={`group relative flex flex-col justify-between overflow-hidden rounded-xl border border-[#8C6239]/20 bg-[#FAF6F0] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/50 hover:shadow-xl hover:shadow-[#8C6239]/12 ${
-        item.featured ? 'md:col-span-2 lg:col-span-2' : 'col-span-1'
-      }`}
+      className="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-[#8C6239]/20 bg-[#FAF6F0] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/50 hover:shadow-xl hover:shadow-[#8C6239]/12"
     >
       {/* Interactive Warm Gold Spotlight Sheen */}
       <div
@@ -121,8 +119,8 @@ export function PalmaresSection() {
           </p>
         </motion.div>
 
-        {/* Asymmetric Bento Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {/* Equal-Width 3-Column Grid */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PALMARES_ITEMS.map((item, idx) => (
             <SpotlightCard key={item.id} item={item} index={idx} />
           ))}
