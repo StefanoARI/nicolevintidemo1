@@ -112,7 +112,7 @@ export function FilosofiaSection() {
                 />
               </motion.div>
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#1A1412]/40 via-transparent to-transparent" />
-              <div className="absolute right-4 bottom-4 rounded-sm border border-[#DFC39D]/30 bg-[#FAF6F0]/92 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8C6239] backdrop-blur-sm">
+              <div className="absolute left-4 bottom-4 rounded-sm border border-[#DFC39D]/30 bg-[#FAF6F0]/92 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#8C6239] backdrop-blur-sm">
                 Spazio Rigenerativo • Gallarate
               </div>
             </div>

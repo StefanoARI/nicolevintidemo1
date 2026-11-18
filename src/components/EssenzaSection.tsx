@@ -48,7 +48,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
                   <ResilientImage
                     src={NICOLE_PORTRAIT_URL}
                     alt="Nicole Vinti fondatrice e master hairstylist | Parrucchiere a Gallarate"
-                    fallbackLabel="Nicole Vinti • Fondatrice & Creative Director"
+                    fallbackLabel="Nicole Vinti"
                     className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
                   />
                 </motion.div>
@@ -59,9 +59,6 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
                 <div>
                   <p className="font-serif text-xl font-semibold text-[#1A1412]">
                     Nicole Vinti
-                  </p>
-                  <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8C6239]">
-                    Fondatrice &amp; Creative Director
                   </p>
                 </div>
               </div>
