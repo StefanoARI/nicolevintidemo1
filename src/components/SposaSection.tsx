@@ -45,12 +45,12 @@ export function SposaSection({
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-14 grid grid-cols-1 items-start gap-10 lg:mb-16 lg:grid-cols-2 lg:gap-16"
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-14 grid grid-cols-1 items-start gap-10 text-center lg:mb-16 lg:grid-cols-2 lg:gap-16 lg:text-left"
         >
           <div>
-            <div className="mb-4 flex items-center gap-3">
-              <span className="h-[1px] w-8 bg-[#C4965A]" />
+            <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+              <span className="hidden h-[1px] w-8 bg-[#C4965A] lg:block" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#C4965A]">
                 Haute Coiffure Mariage
               </span>
@@ -81,7 +81,7 @@ export function SposaSection({
               giorno del matrimonio.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 pt-1">
+            <div className="flex flex-wrap items-center justify-center gap-6 pt-1 lg:justify-start">
               <a
                 href={EXTERNAL_LINKS.matrimoni}
                 target="_blank"

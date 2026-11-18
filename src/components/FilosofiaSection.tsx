@@ -30,11 +30,11 @@ export function FilosofiaSection() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5"
+            transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center lg:col-span-5 lg:text-left"
           >
-            <div className="mb-4 flex items-center gap-3">
-              <span className="h-[1px] w-8 bg-[#8C6239]" />
+            <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+              <span className="hidden h-[1px] w-8 bg-[#8C6239] lg:block" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">
                 Filosofia dello Spazio
               </span>
@@ -68,11 +68,11 @@ export function FilosofiaSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{
-                  duration: 0.6,
+                  duration: 1.1,
                   delay: idx * 0.1,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="group flex flex-col justify-between rounded-xl border border-[#8C6239]/20 bg-[#F3ECE1] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/45 hover:shadow-xl hover:shadow-[#8C6239]/10"
+                className="group flex flex-col justify-between rounded-xl border border-[#8C6239]/20 bg-[#F3ECE1] p-7 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/45 hover:shadow-xl hover:shadow-[#8C6239]/10 sm:text-left"
               >
                 <div>
                   <span
@@ -122,7 +122,7 @@ export function FilosofiaSection() {
             style={{ y: cardParallax }}
             className="relative z-20 lg:col-span-5 lg:-ml-12"
           >
-            <div className="rounded-xl border border-[#8C6239]/25 bg-[#FAF6F0] p-8 shadow-2xl shadow-[#1A1412]/12 sm:p-10">
+            <div className="rounded-xl border border-[#8C6239]/25 bg-[#FAF6F0] p-8 text-center shadow-2xl shadow-[#1A1412]/12 sm:p-10 lg:text-left">
               <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#8C6239]">
                 Metodo Total Emotion
               </span>
@@ -136,7 +136,7 @@ export function FilosofiaSection() {
                 te.
               </p>
 
-              <div className="mt-7 flex items-center gap-6 border-t border-[#8C6239]/15 pt-6">
+              <div className="mt-7 flex items-center justify-center gap-6 border-t border-[#8C6239]/15 pt-6 lg:justify-start">
                 <div>
                   <p className="font-serif text-2xl font-semibold tabular-nums text-[#8C6239]">
                     100%

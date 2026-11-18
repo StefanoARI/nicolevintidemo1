@@ -31,7 +31,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.25, ease: [0.16, 1, 0.3, 1] }}
             className="relative lg:col-span-5"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
@@ -55,7 +55,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
               </div>
 
               {/* Caption Row */}
-              <div className="relative z-10 mt-6 flex items-end justify-between border-b border-[#8C6239]/20 pb-4">
+              <div className="relative z-10 mt-6 flex flex-col items-center justify-between border-b border-[#8C6239]/20 pb-4 text-center lg:flex-row lg:items-end lg:text-left">
                 <div>
                   <p className="font-serif text-xl font-semibold text-[#1A1412]">
                     Nicole Vinti
@@ -70,12 +70,12 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.75, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-7 lg:col-span-7"
+            transition={{ duration: 1.25, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col gap-7 text-center lg:col-span-7 lg:text-left"
           >
             <div>
-              <div className="mb-4 flex items-center gap-3">
-                <span className="h-[1px] w-8 bg-[#8C6239]" />
+              <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+                <span className="hidden h-[1px] w-8 bg-[#8C6239] lg:block" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">
                   La Visione Estetica di Nicole Vinti
                 </span>
@@ -109,7 +109,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
             {/* Interactive Feature Cards */}
             <div className="grid grid-cols-1 gap-5 pt-2 sm:grid-cols-2">
               <div className="group rounded-lg border border-[#8C6239]/20 bg-[#FAF6F0] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/50 hover:shadow-lg hover:shadow-[#8C6239]/10">
-                <div className="flex items-start gap-3.5">
+                <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-start sm:gap-3.5 sm:text-left">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#8C6239]/15 text-[#8C6239] transition-colors group-hover:bg-[#8C6239] group-hover:text-[#FAF6F0]">
                     <Check className="h-3.5 w-3.5" strokeWidth={2.5} />
                   </span>
@@ -126,7 +126,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
               </div>
 
               <div className="group rounded-lg border border-[#8C6239]/20 bg-[#FAF6F0] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#8C6239]/50 hover:shadow-lg hover:shadow-[#8C6239]/10">
-                <div className="flex items-start gap-3.5">
+                <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-start sm:gap-3.5 sm:text-left">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#8C6239]/15 text-[#8C6239] transition-colors group-hover:bg-[#8C6239] group-hover:text-[#FAF6F0]">
                     <Check className="h-3.5 w-3.5" strokeWidth={2.5} />
                   </span>
@@ -142,7 +142,7 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="flex justify-center pt-2 lg:justify-start">
               <button
                 type="button"
                 onClick={() => onScrollToSection('prenotazione')}

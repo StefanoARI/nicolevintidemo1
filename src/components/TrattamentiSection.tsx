@@ -20,12 +20,12 @@ export function TrattamentiSection({ onOpenModal }: TrattamentiSectionProps) {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-14 flex flex-col justify-between gap-6 border-b border-[#8C6239]/20 pb-8 lg:flex-row lg:items-end"
+          transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-14 flex flex-col justify-between gap-6 border-b border-[#8C6239]/20 pb-8 text-center lg:flex-row lg:items-end lg:text-left"
         >
-          <div className="max-w-3xl">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="h-[1px] w-8 bg-[#8C6239]" />
+          <div className="mx-auto max-w-3xl lg:mx-0">
+            <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+              <span className="hidden h-[1px] w-8 bg-[#8C6239] lg:block" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">
                 Menu Rituel • Haute Beauté
               </span>
@@ -36,7 +36,7 @@ export function TrattamentiSection({ onOpenModal }: TrattamentiSectionProps) {
             </h2>
           </div>
 
-          <p className="max-w-md text-[15px] font-light leading-[1.7] text-[#4A403A]">
+          <p className="mx-auto max-w-md text-[15px] font-light leading-[1.7] text-[#4A403A] lg:mx-0">
             Protocolli d’autore progettati per risanare la fibra capillare in profondità e
             vestire la chioma con tonalità ricche e sfumature multidimensionali.
           </p>
@@ -51,7 +51,7 @@ export function TrattamentiSection({ onOpenModal }: TrattamentiSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{
-                duration: 0.55,
+                duration: 1.05,
                 delay: idx * 0.08,
                 ease: [0.16, 1, 0.3, 1],
               }}
@@ -93,7 +93,7 @@ export function TrattamentiSection({ onOpenModal }: TrattamentiSectionProps) {
               </button>
 
               {/* Card Body */}
-              <div className="flex flex-1 flex-col justify-between p-6">
+              <div className="flex flex-1 flex-col justify-between p-6 text-center sm:text-left">
                 <div>
                   <h3 className="font-serif text-xl font-semibold leading-snug text-[#1A1412]">
                     {item.title}

@@ -67,12 +67,12 @@ export function PrenotazioneSection() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col justify-between gap-8 lg:col-span-5"
           >
-            <div>
-              <div className="mb-4 flex items-center gap-3">
-                <span className="h-[1px] w-8 bg-[#8C6239]" />
+            <div className="text-center lg:text-left">
+              <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+                <span className="hidden h-[1px] w-8 bg-[#8C6239] lg:block" />
                 <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">
                   Esperienza Su Misura
                 </span>
@@ -91,8 +91,8 @@ export function PrenotazioneSection() {
 
             {/* Atelier Card */}
             <div className="flex flex-col justify-between rounded-xl border border-[#8C6239]/25 bg-[#F3ECE1] p-7 shadow-lg shadow-[#1A1412]/5 sm:p-9">
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start justify-between">
+              <div className="flex flex-col items-center gap-6 text-center sm:items-stretch sm:text-left">
+                <div className="flex w-full flex-col items-center justify-between gap-3 sm:flex-row sm:items-start">
                   <div>
                     <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8C6239]">
                       Salon Emotion
@@ -110,7 +110,7 @@ export function PrenotazioneSection() {
                   href={ATELIER_MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 text-[15px] font-light text-[#4A403A] transition-colors hover:text-[#8C6239]"
+                  className="group inline-flex items-center justify-center gap-2 text-[15px] font-light text-[#4A403A] transition-colors hover:text-[#8C6239] sm:justify-start"
                 >
                   <span className="border-b border-[#8C6239]/30 pb-0.5 group-hover:border-[#8C6239]">
                     {ATELIER_ADDRESS}
@@ -118,7 +118,7 @@ export function PrenotazioneSection() {
                   <ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-[#8C6239]" />
                 </a>
 
-                <div className="flex flex-col gap-3 border-t border-[#8C6239]/15 pt-5">
+                <div className="flex w-full flex-col gap-3 border-t border-[#8C6239]/15 pt-5 text-left">
                   {ATELIER_HOURS.map((row) => (
                     <div
                       key={row.days}
@@ -136,10 +136,10 @@ export function PrenotazioneSection() {
                   ))}
                 </div>
 
-                <div className="border-t border-[#8C6239]/15 pt-5">
+                <div className="w-full border-t border-[#8C6239]/15 pt-5">
                   <a
                     href={ATELIER_PHONE_HREF}
-                    className="inline-flex items-center gap-2.5 font-serif text-xl font-semibold tabular-nums text-[#1A1412] transition-colors hover:text-[#8C6239]"
+                    className="inline-flex items-center justify-center gap-2.5 font-serif text-xl font-semibold tabular-nums text-[#1A1412] transition-colors hover:text-[#8C6239] sm:justify-start"
                   >
                     <Phone className="h-4 w-4 text-[#8C6239]" />
                     <span>{ATELIER_PHONE_DISPLAY}</span>
@@ -163,10 +163,10 @@ export function PrenotazioneSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.65, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.15, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col justify-between rounded-xl border border-[#8C6239]/25 bg-[#F3ECE1]/65 p-7 shadow-xl shadow-[#1A1412]/5 sm:p-10 lg:col-span-7"
           >
-            <div className="mb-8">
+            <div className="mb-8 text-center lg:text-left">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8C6239]">
                 Modulo di Richiesta
               </span>

@@ -17,10 +17,10 @@ export function Footer({ onScrollToSection }: FooterProps) {
   return (
     <footer className="border-t border-[#DFC39D]/15 bg-[#140F0D] py-14 text-[#D8CFC5]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 gap-10 border-b border-[#DFC39D]/15 pb-12 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-10 border-b border-[#DFC39D]/15 pb-12 text-center md:grid-cols-12 md:text-left">
           {/* Brand Column */}
           <div className="md:col-span-5">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center gap-3 md:justify-start">
               <img
                 src={BRAND_LOGO_URL}
                 alt=""
@@ -31,7 +31,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
                   (e.currentTarget as HTMLImageElement).style.display = 'none';
                 }}
               />
-              <div>
+              <div className="text-left">
                 <p className="font-serif text-xl font-medium text-[#FAF6F0]">
                   Nicole Vinti
                 </p>
@@ -40,7 +40,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
                 </p>
               </div>
             </div>
-            <p className="mt-4 max-w-sm text-sm font-light leading-relaxed text-[#BFB4A8]">
+            <p className="mx-auto mt-4 max-w-sm text-sm font-light leading-relaxed text-[#BFB4A8] md:mx-0">
               Il piacere di piacersi. Oltre 35 anni di alta moda tra Milano e Parigi nel
               nostro concept store di Gallarate: taglio sartoriale donna, effetti luce,
               rituali Olaplex e Hair SPA.
@@ -52,7 +52,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#C4965A]">
               Esplora
             </p>
-            <ul className="mt-4 flex flex-col gap-2.5 text-sm font-light">
+            <ul className="mt-4 flex flex-col items-center gap-2.5 text-sm font-light md:items-start">
               <li>
                 <button
                   type="button"
@@ -117,26 +117,26 @@ export function Footer({ onScrollToSection }: FooterProps) {
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#C4965A]">
               Atelier Gallarate
             </p>
-            <div className="mt-4 flex flex-col gap-3 text-sm font-light">
+            <div className="mt-4 flex flex-col items-center gap-3 text-sm font-light md:items-start">
               <a
                 href={ATELIER_MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-start gap-2 transition-colors hover:text-[#DFC39D]"
+                className="inline-flex items-start justify-center gap-2 transition-colors hover:text-[#DFC39D] md:justify-start"
               >
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#C4965A]" />
                 <span>{ATELIER_ADDRESS}</span>
               </a>
               <a
                 href={ATELIER_PHONE_HREF}
-                className="inline-flex items-center gap-2 tabular-nums transition-colors hover:text-[#DFC39D]"
+                className="inline-flex items-center justify-center gap-2 tabular-nums transition-colors hover:text-[#DFC39D] md:justify-start"
               >
                 <Phone className="h-4 w-4 shrink-0 text-[#C4965A]" />
                 <span>{ATELIER_PHONE_DISPLAY}</span>
               </a>
             </div>
 
-            <div className="mt-6 flex flex-col gap-2">
+            <div className="mt-6 flex flex-col items-center gap-2 md:items-start">
               {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.handle}
@@ -153,7 +153,7 @@ export function Footer({ onScrollToSection }: FooterProps) {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs text-[#8E8278] sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 pt-8 text-center text-xs text-[#8E8278] sm:flex-row sm:text-left">
           <p>© {new Date().getFullYear()} Nicole Vinti • Hair Stylist &amp; Consulente d&apos;Immagine</p>
           <p className="font-serif italic text-[#C4965A]/80">
             Salon Emotion • Gallarate (VA)

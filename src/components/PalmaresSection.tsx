@@ -46,7 +46,7 @@ function SpotlightCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{
-        duration: 0.5,
+        duration: 1.0,
         delay: index * 0.06,
         ease: [0.16, 1, 0.3, 1],
       }}
@@ -64,7 +64,7 @@ function SpotlightCard({
         }}
       />
 
-      <div className="relative">
+      <div className="relative text-center sm:text-left">
         <div className="mb-5 flex items-center justify-between">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-[#8C6239]/20 bg-[#F3ECE1] transition-colors group-hover:border-[#8C6239]/40">
             <PalmaresIcon id={item.id} />
@@ -85,7 +85,7 @@ function SpotlightCard({
         </p>
       </div>
 
-      <div className="relative mt-6 border-t border-[#8C6239]/15 pt-4 font-serif text-sm italic text-[#5A5049]">
+      <div className="relative mt-6 border-t border-[#8C6239]/15 pt-4 text-center font-serif text-sm italic text-[#5A5049] sm:text-left">
         {item.footer}
       </div>
     </motion.div>
@@ -104,7 +104,7 @@ export function PalmaresSection() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mb-12 flex max-w-2xl flex-col items-center text-center"
         >
           <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">

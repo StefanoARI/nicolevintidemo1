@@ -64,10 +64,10 @@ export function HeroSection({
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-6 flex items-center gap-3"
+          transition={{ duration: 1.05, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-6 flex items-center justify-center gap-3 text-center lg:justify-start lg:text-left"
         >
-          <span className="h-[1px] w-10 bg-[#8C6239]" />
+          <span className="hidden h-[1px] w-10 bg-[#8C6239] lg:block" />
           <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#8C6239]">
             Nicole Vinti • Hair Stylist &amp; Consulente d&apos;Immagine tra Gallarate e Milano
           </span>
@@ -78,14 +78,14 @@ export function HeroSection({
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-8"
+            transition={{ duration: 1.2, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center lg:col-span-8 lg:text-left"
           >
-            <h1 className="max-w-4xl font-serif text-[2.45rem] font-normal leading-[1.06] tracking-[-0.02em] text-[#1A1412] sm:text-5xl lg:text-[3.85rem]">
+            <h1 className="mx-auto max-w-4xl font-serif text-[2.25rem] font-normal leading-[1.08] tracking-[-0.02em] text-[#1A1412] sm:text-5xl lg:mx-0 lg:text-[3.85rem]">
               Nicole Vinti: Hair Stylist, parrucchiere a Gallarate e consulente d’Immagine
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base font-light leading-[1.75] text-[#4A403A] sm:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-base font-light leading-[1.75] text-[#4A403A] sm:text-lg lg:mx-0">
               <span className="font-serif text-xl italic font-medium text-[#8C6239]">
                 Il piacere di piacersi
               </span>{' '}
@@ -98,7 +98,7 @@ export function HeroSection({
             </p>
 
             {/* Social Handles — clean typographic row (zero pills) */}
-            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2.5 border-t border-[#8C6239]/15 pt-5">
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 border-t border-[#8C6239]/15 pt-5 lg:justify-start">
               {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.handle}
@@ -120,8 +120,8 @@ export function HeroSection({
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-3.5 sm:flex-row lg:col-span-4 lg:flex-col lg:items-stretch lg:justify-end"
+            transition={{ duration: 1.2, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col items-stretch gap-3.5 sm:flex-row sm:justify-center lg:col-span-4 lg:flex-col lg:items-stretch lg:justify-end"
           >
             <button
               type="button"
@@ -147,8 +147,8 @@ export function HeroSection({
           ref={bannerRef}
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.85, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
-          className="group relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-[#8C6239]/20 bg-[#261D19] shadow-2xl shadow-[#1A1412]/12 sm:aspect-[21/9] lg:min-h-[500px]"
+          transition={{ duration: 1.35, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
+          className="group relative aspect-[4/3] min-h-[280px] w-full overflow-hidden rounded-xl border border-[#8C6239]/20 bg-[#261D19] shadow-2xl shadow-[#1A1412]/12 sm:aspect-[21/9] lg:min-h-[500px]"
         >
           <button
             type="button"
@@ -173,14 +173,14 @@ export function HeroSection({
                 alt="Salone parrucchieri Nicole Vinti a Gallarate - Salon Emotion"
                 fallbackLabel="Salon Emotion • Atelier Nicole Vinti Gallarate"
                 loading="eager"
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
             </motion.div>
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1A1412]/70 via-[#1A1412]/10 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1A1412]/25 via-transparent to-transparent sm:from-[#1A1412]/70 sm:via-[#1A1412]/10" />
           </button>
 
-          {/* Warm Floating Atelier Badge */}
-          <div className="pointer-events-none absolute bottom-5 left-5 right-5 max-w-md rounded-lg border border-[#DFC39D]/30 bg-[#FAF6F0]/92 p-5 shadow-xl backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-auto">
+          {/* Warm Floating Atelier Badge (Desktop / Tablet) */}
+          <div className="pointer-events-none hidden max-w-md rounded-lg border border-[#DFC39D]/30 bg-[#FAF6F0]/92 p-5 shadow-xl backdrop-blur-md sm:absolute sm:bottom-7 sm:left-7 sm:block">
             <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8C6239]">
               <Sparkles className="h-3.5 w-3.5" />
               <span>Salon Emotion • Design Barbara Rigolio</span>
@@ -192,8 +192,20 @@ export function HeroSection({
           </div>
         </motion.div>
 
+        {/* Mobile Atelier Caption (kept below image so salon photo stays 100% visible) */}
+        <div className="mt-4 rounded-lg border border-[#8C6239]/20 bg-[#F3ECE1] p-4 text-center sm:hidden">
+          <div className="flex items-center justify-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#8C6239]">
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>Salon Emotion • Design Barbara Rigolio</span>
+          </div>
+          <p className="mt-1.5 font-serif text-sm leading-relaxed text-[#1A1412]">
+            Spazi concepiti per rigenerare mente e spirito prima ancora della materia
+            capillare.
+          </p>
+        </div>
+
         {/* 4-Column Pillars Strip */}
-        <div className="grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-16">
+        <div className="grid grid-cols-1 gap-6 py-12 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-16 lg:text-left">
           {HERO_PILLARS.map((pillar, idx) => (
             <motion.div
               key={pillar.title}
@@ -201,7 +213,7 @@ export function HeroSection({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{
-                duration: 0.5,
+                duration: 1.0,
                 delay: idx * 0.08,
                 ease: [0.16, 1, 0.3, 1],
               }}

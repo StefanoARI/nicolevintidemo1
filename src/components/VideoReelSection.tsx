@@ -41,16 +41,16 @@ export function VideoReelSection({
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-14 border-b border-[#DFC39D]/15 pb-8"
+          transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-14 border-b border-[#DFC39D]/15 pb-8 text-center lg:text-left"
         >
-          <div className="mb-4 flex items-center gap-3">
-            <span className="h-[1px] w-8 bg-[#C4965A]" />
+          <div className="mb-4 flex items-center justify-center gap-3 lg:justify-start">
+            <span className="hidden h-[1px] w-8 bg-[#C4965A] lg:block" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#C4965A]">
               Dietro le Quinte dell&apos;Arte
             </span>
           </div>
-          <h2 className="max-w-3xl font-serif text-3xl font-normal leading-[1.15] text-[#FAF6F0] sm:text-4xl lg:text-[2.75rem]">
+          <h2 className="mx-auto max-w-3xl font-serif text-3xl font-normal leading-[1.15] text-[#FAF6F0] sm:text-4xl lg:mx-0 lg:text-[2.75rem]">
             L&apos;Esperienza in Salone — Guarda il Video Reel
           </h2>
         </motion.div>
@@ -61,7 +61,7 @@ export function VideoReelSection({
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="flex justify-center lg:col-span-5"
           >
             <button
@@ -133,10 +133,10 @@ export function VideoReelSection({
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col gap-7 lg:col-span-7"
           >
-            <div>
+            <div className="text-center lg:text-left">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C4965A]">
                 I Passaggi Chiave del Salone
               </span>
@@ -187,7 +187,7 @@ export function VideoReelSection({
               })}
             </div>
 
-            <div className="flex flex-wrap items-center gap-6 pt-2">
+            <div className="flex flex-wrap items-center justify-center gap-6 pt-2 lg:justify-start">
               <button
                 type="button"
                 onClick={() => onScrollToSection('prenotazione')}
