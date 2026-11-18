@@ -1,0 +1,6 @@
+{
+  "name": "Nicole Vinti — Hair Stylist & Consulente d'Immagine",
+  "description": "Nicole Vinti, salone di parrucchieri a Gallarate e consulenza d'immagine. Taglio donna, balayage, extension, hair spa e acconciature sposa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
