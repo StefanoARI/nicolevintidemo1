@@ -64,9 +64,6 @@ export function EssenzaSection({ onScrollToSection }: EssenzaSectionProps) {
                     Fondatrice &amp; Creative Director
                   </p>
                 </div>
-                <span className="font-serif text-sm italic text-[#5A5049]">
-                  Hairstylist d&apos;Autore
-                </span>
               </div>
             </div>
           </motion.div>
